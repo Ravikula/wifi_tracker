@@ -1,17 +1,17 @@
-#IMPORT LIBRARIES 
+        #IMPORT LIBRARIES 
 
 import pandas as pd
 import numpy as np
 
-#Importing data set
+        #Importing data set
 
 file_path=r'D:\DataUsage.csv'
 data=pd.read_csv(file_path)
 
         #Describing data
-#print(data_points)
-#print(data)
-#data.describe()
+        #print(data_points)
+        #print(data)
+        #data.describe()
 
 
 
@@ -37,7 +37,7 @@ for i in range(data_points):
 usage_anytime=round(usage_anytime/1000,3)
 usage_nighttime=round(usage_nighttime/1000,3)
 
-#PRINTING OUT RESULTS
+          #PRINTING OUT RESULTS
     
 total_usage=usage_anytime+usage_nighttime
 print('Day time data usage: ', usage_anytime,'GB',sep='')
